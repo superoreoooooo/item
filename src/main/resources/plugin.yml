@@ -1,0 +1,10 @@
+name: Item
+version: '${project.version}'
+main: xyz.oreodev.item.Item
+api-version: 1.19
+authors: [ oreo ]
+description: item
+website: https://github.com/superoreoooooo
+commands:
+  item:
+    description: item
