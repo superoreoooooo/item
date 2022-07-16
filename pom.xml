@@ -41,7 +41,7 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <outputFile>C:\Users\oooow\Documents\bkt\plugins\item.jar</outputFile>
+                            <outputFile>D:\trash\plugins\item.jar</outputFile>
                         </configuration>
                     </execution>
                 </executions>

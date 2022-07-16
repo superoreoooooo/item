@@ -8,9 +8,9 @@ public final class Item extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "hello");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "item hello!");
         getCommand("item").setExecutor(new itemCommand());
-        Bukkit.getPluginManager().registerEvents(new listener(), this);
+        Bukkit.getPluginManager().registerEvents(new listener(this), this);
     }
 
     @Override
