@@ -9,6 +9,7 @@ import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.metadata.FixedMetadataValue;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
 import java.util.ArrayList;
@@ -76,6 +77,9 @@ public class listener implements Listener {
         tntPrimed.setFuseTicks(80);
         location.getWorld().playSound(location, Sound.ENTITY_TNT_PRIMED, 10f, 1f);
         Bukkit.broadcastMessage(ChatColor.RED + "핵폭탄이 설치되었습니다.");
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            player.sendTitle(ChatColor.RED + "핵폭탄이 설치되었습니다.", "");
+        }
     }
 
     public void itemDelay(Player player) {
